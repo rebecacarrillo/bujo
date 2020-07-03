@@ -1,5 +1,8 @@
 import click
+import colored
+from colored import stylize
 
+print(stylize("This is the BUJO CLI", colored.fg("aquamarine_1b")))
 
 @click.command()
 def main():
@@ -15,6 +18,5 @@ def main():
 
     CLI
     """)
-
 if __name__ == "__main__":
     main()
