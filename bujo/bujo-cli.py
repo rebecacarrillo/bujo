@@ -18,5 +18,17 @@ def main():
 
     CLI
     """)
+
+click.echo('Start? [y/n] ' , nl=False)
+c = click.getchar()
+click.echo()
+if c == 'y':
+    click.echo('Yay!')
+elif c == 'n':
+    click.echo('Okay bye')
+else:
+    click.echo('No manches, invalid input')
+
+
 if __name__ == "__main__":
     main()
