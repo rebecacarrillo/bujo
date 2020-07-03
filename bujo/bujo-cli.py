@@ -9,7 +9,7 @@ print(stylize("This is the BUJO CLI", colored.fg("aquamarine_1b")))
 def bujo():
     pass
 
-@click.command()
+@bujo.command(help="displays cool ascii art greeting message")
 def hey():
     click.echo("""
     Welcome to the
@@ -24,7 +24,7 @@ def hey():
     CLI
     """)
 
-@bujo.command()
+@bujo.command(help="shows a loader")
 def load():
     showLoader()
 
