@@ -10,7 +10,7 @@ def bujo():
     pass
 
 @click.command()
-def main():
+def hey():
     click.echo("""
     Welcome to the
     
@@ -24,11 +24,9 @@ def main():
     CLI
     """)
 
-
-
 @bujo.command()
 def load():
-    showLoader([1,1,1,1,1,1])
+    showLoader()
 
 if __name__ == "__main__":
     bujo()
