@@ -10,6 +10,11 @@ docker run rcarrillo9/bujo-cli
 
 ```
 
+## Install Locally
+```
+python setup.py bdist_wheel
+python -m pip install dist/bujocli-0.1-py3-none-any.whl
+```
 
 ### Guidelines
 

@@ -6,12 +6,9 @@ import pathlib
 setup(
     name='bujocli',
     version=0.1,
+    py_modules=['bujo-cli'],
     description='because we could? CLI with python, Docker, some other stuff',
     author='rebecacarrillo',
-    packages=find_packages(where=bujo),
-    entry_points={
-        'console_scripts': [
-            'hey=bujo-cli:main'
-        ],
-    }
+    packages=find_packages()
 )
+
